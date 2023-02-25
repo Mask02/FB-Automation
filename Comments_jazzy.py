@@ -12,7 +12,7 @@ from time import sleep
 
 # **************************************************
 input_email = 'lacaba1242@breazeim.com'
-input_password = 'jhonbonda123'
+input_password = ''
 
 # **************************************************
 
