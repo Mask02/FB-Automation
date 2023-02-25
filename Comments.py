@@ -35,7 +35,7 @@ async def main(true=None):
     try:
         driver.get('https://www.facebook.com/login')
         input_email = 'lacaba1242@breazeim.com'
-        input_password = 'jhonbonda123'
+        input_password = ''
         driver.find_element(By.ID, 'email').send_keys(input_email)
         driver.find_element(By.ID, 'pass').send_keys(input_password)
         driver.find_element(By.ID, "loginbutton").click()
