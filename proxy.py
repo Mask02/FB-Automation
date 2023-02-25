@@ -38,15 +38,15 @@ proxies = [
 
 ]
 
-# cycle through the proxies infinitely
-# proxy_cycle = itertools.cycle(proxies)
-#
-# for i in range(len(proxies)):
-#     # print(proxy)
-# options = webdriver.ChromeOptions()
-# options.add_argument('--proxy-server=%s' % proxy)
-# driver = webdriver.Chrome(options=options)
-# driver.get('http://whatismyipaddress.com')
-# driver.implicitly_wait(10)
-# time.sleep(10)
-# # driver.quit()
+cycle through the proxies infinitely
+proxy_cycle = itertools.cycle(proxies)
+
+for i in range(len(proxies)):
+    # print(proxy)
+options = webdriver.ChromeOptions()
+options.add_argument('--proxy-server=%s' % proxy)
+driver = webdriver.Chrome(options=options)
+driver.get('http://whatismyipaddress.com')
+driver.implicitly_wait(10)
+time.sleep(10)
+driver.quit()
